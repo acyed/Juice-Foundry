@@ -1,10 +1,12 @@
 # Juice Oracle for Foundry VTT
 
-A Foundry VTT v13 module that ports the [Juice Oracle](https://thunder9861.itch.io/juice-oracle) dice mechanics for solo roleplaying. All 21 oracles from the original [juice-roll Flutter app](https://github.com/johnkord/juice-roll) are available from a single floating panel; results are posted to chat as cleanly-formatted cards.
+A Foundry VTT v13/v14 module that ports the [Juice Oracle](https://thunder9861.itch.io/juice-oracle) dice mechanics for solo roleplaying. All 21 oracles from the original [juice-roll Flutter app](https://github.com/johnkord/juice-roll) are available from a single floating panel; results are posted to chat as cleanly-formatted cards.
 
 ## What's included
 
 A floating panel grouped into five sections, with 21 oracles total:
+
+![Project Screenshot](Juice-Foundry-UI.png)
 
 **Core**
 
