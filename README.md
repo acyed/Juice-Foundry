@@ -52,7 +52,7 @@ Manual install:
 1. Download or clone this folder into your Foundry `Data/modules/juice-oracle` directory.
 2. Restart Foundry and enable **Juice Oracle** in your world's module settings.
 
-Manifest URL install (once published): paste your `module.json` URL into Foundry's *Install Module* dialog.
+Manifest URL install: https://github.com/acyed/juice-foundry/releases/latest/download/module.json
 
 ## How to use
 
