@@ -2,7 +2,7 @@
   "id": "juice-oracle",
   "title": "Juice Oracle",
   "description": "A solo-roleplaying oracle module that ports the Juice Oracle dice mechanics to Foundry VTT. Provides 21 oracles for fate checks, scenes, NPCs, world-building, dungeons, wilderness, treasure and more — all rolled directly to chat.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "13",
     "verified": "14",
