@@ -1,0 +1,248 @@
+/* ===========================================================================
+   Juice Oracle — module styles
+   ===========================================================================
+   All styles are scoped under .juice-oracle (panel) or .juice-card (chat
+   message). The module respects Foundry v13 themes by using CSS variables
+   inherited from --color-*, falling back to safe defaults.
+   ========================================================================= */
+
+.juice-oracle-panel .juice-panel-intro {
+  font-size: var(--font-size-13, 13px);
+  color: var(--color-text-secondary, #c9c1b4);
+  padding: 6px 8px 0;
+}
+
+.juice-oracle-panel .juice-group {
+  margin: 8px 4px 4px;
+}
+
+.juice-oracle-panel .juice-group-label {
+  font-size: var(--font-size-12, 12px);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary, #c9c1b4);
+  margin: 4px 4px 6px;
+  border-bottom: 1px solid var(--color-border-light-tertiary, rgba(255,255,255,0.08));
+  padding-bottom: 2px;
+}
+
+.juice-oracle-panel .juice-group-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.juice-oracle-panel .juice-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 6px;
+  min-height: 64px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-dark, rgba(0,0,0,0.4));
+  background: var(--color-control-bg, rgba(0,0,0,0.18));
+  color: var(--color-text-primary, #f0e6d2);
+  cursor: pointer;
+  font-size: var(--font-size-11, 11px);
+  text-align: center;
+  line-height: 1.15;
+  transition: background-color 100ms ease, transform 80ms ease, border-color 100ms ease;
+}
+
+.juice-oracle-panel .juice-tile:hover {
+  background: var(--color-control-bg-hover, rgba(255,255,255,0.08));
+  border-color: var(--color-border-highlight, rgba(255,255,255,0.25));
+}
+
+.juice-oracle-panel .juice-tile:active {
+  transform: translateY(1px);
+}
+
+.juice-oracle-panel .juice-tile i {
+  font-size: 18px;
+  color: var(--color-text-accent, #ffd7a0);
+}
+
+.juice-oracle-panel .juice-tile-label {
+  font-weight: 500;
+}
+
+.juice-oracle-panel .juice-panel-footer {
+  margin: 10px 4px 0;
+  padding-top: 6px;
+  border-top: 1px solid var(--color-border-light-tertiary, rgba(255,255,255,0.06));
+  text-align: center;
+  color: var(--color-text-secondary, #999);
+}
+
+/* ---------- Dialog prompt --------------------------------------------- */
+
+.juice-prompt {
+  margin: 0 0 8px;
+}
+
+/* ===========================================================================
+   Chat cards
+   ========================================================================= */
+
+.juice-card {
+  display: block;
+  border-radius: 6px;
+  background: var(--color-control-bg, rgba(0,0,0,0.12));
+  border: 1px solid var(--color-border-light-tertiary, rgba(0,0,0,0.18));
+  padding: 0;
+  margin: 2px 0;
+  overflow: hidden;
+}
+
+.juice-card .juice-card-header {
+  font-weight: 600;
+  font-size: var(--font-size-13, 13px);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--color-control-bg-hover, rgba(0,0,0,0.18));
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--color-border-light-tertiary, rgba(0,0,0,0.18));
+}
+
+.juice-card .juice-card-body {
+  padding: 6px 8px;
+}
+
+.juice-card .juice-result-main {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 2px 0 6px;
+  line-height: 1.3;
+}
+
+.juice-card .juice-yes { color: #6ed26e; }
+.juice-card .juice-no  { color: #ec7a7a; }
+.juice-card .juice-neutral { color: #d8b96e; }
+
+.juice-card .juice-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 0;
+  font-size: var(--font-size-11, 11px);
+  color: var(--color-text-secondary, #b8b0a0);
+}
+
+.juice-card .juice-dice {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.juice-card .juice-dice-label {
+  opacity: 0.7;
+}
+
+.juice-card .juice-tag {
+  display: inline-block;
+  font-size: 0.85em;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+.juice-card .juice-twocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.juice-card .juice-threecol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.juice-card .juice-twocol > div,
+.juice-card .juice-threecol > div {
+  background: rgba(255,255,255,0.03);
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.juice-card .juice-subblock {
+  margin-top: 6px;
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 4px;
+  border-left: 3px solid var(--color-text-accent, #d8b96e);
+}
+
+.juice-card .juice-subhead {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.juice-card .juice-trigger {
+  margin-top: 6px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.juice-card .juice-trigger-event {
+  background: rgba(220, 170, 70, 0.18);
+  border-left: 3px solid #ddae47;
+  color: #ffd380;
+}
+
+.juice-card .juice-trigger-warn {
+  background: rgba(220, 90, 90, 0.18);
+  border-left: 3px solid #d65a5a;
+  color: #ffb4b4;
+}
+
+.juice-card .juice-desc {
+  font-size: 0.92em;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.juice-card .juice-list {
+  margin: 4px 0;
+  padding-left: 22px;
+}
+.juice-card .juice-list li {
+  margin-bottom: 4px;
+}
+
+.juice-card .juice-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.juice-card .juice-abstract-icon {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+}
+
+/* ---------- Light theme tweaks ---------------------------------------- */
+/* Foundry's V13 themes set colorscheme via classes; fall back gracefully. */
+@media (prefers-color-scheme: light) {
+  .juice-card {
+    background: rgba(0,0,0,0.05);
+  }
+  .juice-card .juice-card-header {
+    background: rgba(0,0,0,0.08);
+  }
+}

@@ -1,0 +1,27 @@
+<div class="juice-panel-root">
+  <div class="juice-panel-intro">
+    <p>Click any oracle to roll. Some oracles will ask for a quick parameter (likelihood, environment, etc.) before posting to chat.</p>
+  </div>
+
+  {{#each groups}}
+    <section class="juice-group" data-group="{{this.id}}">
+      <h3 class="juice-group-label">{{this.label}}</h3>
+      <div class="juice-group-grid">
+        {{#each this.oracles}}
+          <button type="button"
+                  class="juice-tile"
+                  data-action="{{this.action}}"
+                  data-oracle="{{this.key}}"
+                  aria-label="{{this.label}}">
+            <i class="{{this.icon}}"></i>
+            <span class="juice-tile-label">{{this.label}}</span>
+          </button>
+        {{/each}}
+      </div>
+    </section>
+  {{/each}}
+
+  <footer class="juice-panel-footer">
+    <small>Juice Oracle by thunder9861 — module ports the dice mechanics under CC BY-NC-SA 4.0.</small>
+  </footer>
+</div>

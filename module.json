@@ -1,0 +1,41 @@
+{
+  "id": "juice-oracle",
+  "title": "Juice Oracle",
+  "description": "A solo-roleplaying oracle module that ports the Juice Oracle dice mechanics to Foundry VTT. Provides 21 oracles for fate checks, scenes, NPCs, world-building, dungeons, wilderness, treasure and more — all rolled directly to chat.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "Juice Oracle Foundry Module",
+      "url": "https://github.com/johnkord/juice-roll"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/juice.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/johnkord/juice-roll",
+  "manifest": "https://example.com/juice-oracle/module.json",
+  "download": "https://example.com/juice-oracle/juice-oracle.zip",
+  "license": "CC-BY-NC-SA-4.0",
+  "readme": "README.md",
+  "flags": {
+    "juice-oracle": {
+      "originalProject": "https://github.com/johnkord/juice-roll",
+      "originalSystem": "https://thunder9861.itch.io/juice-oracle"
+    }
+  }
+}
